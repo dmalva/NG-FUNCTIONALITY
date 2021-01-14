@@ -1,0 +1,92 @@
+<hr/>
+<h2>Checked</h2>
+<div>
+  <p>Visualizar Arbol de dependencias</p>
+  <div>
+    <!--ng-model="isDisplayTree" [disabled]="!isDisplayTree" [(ngModel)]="isDisplayTree"-->
+    <input type="checkbox" data-toggle="toggle" data-on="Si" data-off="No" data-onstyle="success" data-offstyle="danger" ng-model="isDisplayTree" ng-change="changed()" value="isDisplayTree">
+    <input type="checkbox" [checked]="isDisplayTree" data-toggle="toggle" data-on="Si" data-off="No" data-onstyle="success" data-offstyle="danger">
+  <div>
+  <div>
+    <button (click)="displayTree(true)">Enabled</button>
+    <button (click)="displayTree(false)">Disabled</button>
+    
+    <label>Check me to check both:</label>
+    <br/>
+    <input type="checkbox" [(ngModel)]="isDisplayTree" >
+    <input type="checkbox" [checked]="isDisplayTree" [disabled]="!isDisplayTree" ng-model="isDisplayTree">
+    <br/>
+    <input [checked]="isDisplayTree" id="checkFollower" type="checkbox"   aria-label="Follower input">
+  </div>
+</div>
+<li class="facebook" style="width:33%;" >
+  <a ng-click="setSelectedCourse(Course.ID)" data-toggle="modal" data-target="#myModal">
+    <span class="glyphicon glyphicon-user"></span>
+  </a>
+</li>
+
+<hr/>
+<h2>Collapsed</h2>
+<p>
+  <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+    Link with href
+  </a>
+  <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+    Button with data-target
+  </button>
+</p>
+<div class="collapse" id="collapseExample">
+  <div class="card card-body">
+    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+  </div>
+</div>
+
+
+<hr/>
+<h2>Tree View</h2>
+<p>
+<div class="treeview w-20 border">
+  <h6 class="pt-3 pl-3">Folders</h6>
+  <hr>
+  <ul class="mb-1 pl-3 pb-2">
+    <li><i class="fas fa-angle-right rotate"></i>
+      <span><i class="far fa-envelope-open ic-w mx-1"></i>Mail</span>
+      <ul class="nested">
+        <li><i class="far fa-bell ic-w mr-1"></i>Offers</li>
+        <li><i class="far fa-address-book ic-w mr-1"></i>Contacts</li>
+        <li><i class="fas fa-angle-right rotate"></i>
+          <span><i class="far fa-calendar-alt ic-w mx-1"></i>Calendar</span>
+          <ul class="nested">
+            <li><i class="far fa-clock ic-w mr-1"></i>Deadlines</li>
+            <li><i class="fas fa-users ic-w mr-1"></i>Meetings</li>
+            <li><i class="fas fa-basketball-ball ic-w mr-1"></i>Workouts</li>
+            <li><i class="fas fa-mug-hot ic-w mr-1"></i>Events</li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><i class="fas fa-angle-right rotate"></i>
+      <span><i class="far fa-folder-open ic-w mx-1"></i>Inbox</span>
+      <ul class="nested">
+        <li><i class="far fa-folder-open ic-w mr-1"></i>Admin</li>
+        <li><i class="far fa-folder-open ic-w mr-1"></i>Corporate</li>
+        <li><i class="far fa-folder-open ic-w mr-1"></i>Finance</li>
+        <li><i class="far fa-folder-open ic-w mr-1"></i>Other</li>
+      </ul>
+    </li>
+    <li><i class="fas fa-angle-right rotate"></i>
+      <span><i class="far fa-gem ic-w mx-1"></i>Favourites</span>
+      <ul class="nested">
+          <li><i class="fas fa-pepper-hot ic-w mr-1"></i>Restaurants</li>
+          <li><i class="far fa-eye ic-w mr-1"></i>Places</li>
+          <li><i class="fas fa-gamepad ic-w mr-1"></i>Games</li>
+          <li><i class="fas fa-cocktail ic-w mr-1"></i>Coctails</li>
+          <li><i class="fas fa-pizza-slice ic-w mr-1"></i>Food</li>
+        </ul>
+    </li>
+    <li><i class="far fa-comment ic-w mr-1"></i>Notes</li>
+    <li><i class="fas fa-cogs ic-w mr-1"></i>Settings</li>
+    <li><i class="fas fa-desktop ic-w mr-1"></i>Devices</li>
+    <li><i class="fas fa-trash-alt ic-w mr-1"></i>Deleted Items</li>
+  </ul>
+</div>

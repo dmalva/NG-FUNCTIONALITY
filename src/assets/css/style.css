@@ -1,0 +1,118 @@
+#content{
+	margin-top: 30px;
+	background: white;
+	border: 1px solid #eee;
+	border-radius: 2px;
+	box-shadow: 0px 2px 5px #ccc;
+	padding: 0px;
+	overflow: hidden;
+}
+
+
+#header{
+	/*background: #E03137;*/
+	background: #D34C4C;
+	color: white;
+	margin:0px;
+	height: 90px;
+	line-height: 90px
+}
+
+#header h1 {
+	/*line-height: 90px;*/
+	line-height: 50px;
+	display: block;
+	font-weight: bold;
+	font-size: 30px;
+}
+
+#nav{
+	margin: 0px;
+	padding: 0px;
+	background: rgb(224,49,55,0.67);
+}
+
+#nav ul{
+	margin: 0px;
+	list-style: none;
+	padding-left: 20px;
+}
+
+#nav li{
+	float: left;
+	margin-right: 20px;
+
+}
+
+#nav li a{
+	display: block;
+	line-height: 29px;
+	color: white;
+	height: 30px;
+	padding-left: 10px;
+	padding-right: 10px;
+	transition: all 500ms;
+}
+
+#nav li a:hover{
+	text-decoration: none;
+	background: #D34C4C;
+}
+
+.active{
+	text-decoration: none;
+	/*background: #D34C4C;*/
+	border-bottom: 4px solid yellow;
+}
+
+#main .jumbotron{
+	padding: 50px;
+	margin-top:  30px;
+	border-radius: 8px;
+}
+
+#main .jumbotron a{
+	margin-left: 10px;
+}
+
+#footer{
+	/*float: left;*/
+	margin-top: 30px;
+	padding-top: 15px; 
+	border-top: 1px solid #eee;  
+	background: gray;
+}
+
+#form-product label{
+	margin-top: 10px;
+	
+}
+
+.validateData{
+	color: red;
+	font-weight: bold;
+}
+
+
+.producto_imagen{
+	/*width: 100%;*/
+	height: 200px;
+	margin: 0px auto;
+	display: block;
+	max-width: 100%;
+}
+
+.imagen_relleno{
+	background: #eee;
+	width: 100%;
+	height: 200px;
+}
+
+.imagen_container{
+		width: 100%;
+		overflow: hidden;
+}
+
+.caption a{
+	margin-left: 5px;
+}

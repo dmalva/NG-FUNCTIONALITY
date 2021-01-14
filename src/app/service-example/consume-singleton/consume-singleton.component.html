@@ -1,0 +1,12 @@
+<div style="padding: 5px;">
+  <p>consume-singleton</p>
+  <div>
+    <!--<input type="text" class="" id="name" name="name"  [(ngModel)]="name"/>-->
+    <input type="text" class="info" id="name" name="name"  [(ngModel)]="name" >
+    <p>{{name}}</p>
+  </div>
+  <div>
+    <button (click)="updateName()">Update Name</button>
+    <button (click)="refreshName()">Refresh Name</button>
+  </div>
+</div>
