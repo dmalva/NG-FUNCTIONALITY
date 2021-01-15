@@ -16,6 +16,7 @@ import { FuntionalityComponent } from './funtionality/funtionality.component';
 import { MasterBComponent } from './component-temp/master-b/master-b.component';
 import { MasterBAComponent } from './component-temp/master-b-a/master-b-a.component';
 import { MasterBABComponent } from './component-temp/master-b-a-b/master-b-a-b.component';
+import { MasterBABaComponent } from './component-temp/master-b-a-ba/master-b-a-ba.component';
 
 //import {SingletonService} from './service-example/singleton.service';
 
@@ -29,6 +30,7 @@ import { MasterBABComponent } from './component-temp/master-b-a-b/master-b-a-b.c
     MasterBComponent,
     MasterBAComponent,
     MasterBABComponent,
+    MasterBABaComponent,
   ],
   imports: [
     BrowserModule,
