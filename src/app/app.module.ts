@@ -13,6 +13,7 @@ import { HomeComponent } from './home/home.component';
 import { ControlesComponent } from './controles/controles.component';
 import { BoostrapTreeComponent } from './controles/boostrapTree.component';
 import { FuntionalityComponent } from './funtionality/funtionality.component';
+import { MasterBComponent } from './component-temp/master-b/master-b.component';
 
 //import {SingletonService} from './service-example/singleton.service';
 
@@ -23,6 +24,7 @@ import { FuntionalityComponent } from './funtionality/funtionality.component';
     ControlesComponent,
     BoostrapTreeComponent,
     FuntionalityComponent,
+    MasterBComponent,
   ],
   imports: [
     BrowserModule,
